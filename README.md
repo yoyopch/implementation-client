@@ -1,21 +1,11 @@
 BUT INFORMATIQUE - PARIS DESCARTES
 
-Implémentation d’un besoin client
+# **Implémentation d’un besoin client**
 
 Projet réalisé par Yohann PECH et Félix WANG du groupe 106 2022-2023
 
-Table des matières
 
-Présentation du projet 
-
-Organisation des tests 
-
-Bilan de validations des tests de développement
-
-Bilan du projet
-
-
-Présentation du projet :
+# **Présentation du projet :**
 
 Cet SAE d’initiation au développement correspond à notre premier travail en groupe en rapport à la programmation, plus particulièrement sur le langage C. Il représente la finalisation des compétences acquises lors de ses six premières semaines de cours.
 
@@ -31,8 +21,7 @@ Les entrées de l’application doivent respecter des conditions qui permettront
 Les sorties de l’application sont définies en fonction des entrées. Suivant les différentes commandes, l’application affichera un message qui validera ou pas le texte saisi de l’utilisateur. 
 
 
-
-Organisation des tests 
+# **Organisation des tests**
 
 
 Pour tester notre application, il nous a été fourni au total 8 jeux de tests, comprenant les fichiers d’entrées in-sp.txt et les fichiers de sortie out-sp.txt. Chaque sprint testait différentes fonctions de notre programme. Nous testions les entrées du programme avec les fichiers in-sp.txt. La validation d’un sprint nous permettait de passer au sprint suivant.
@@ -40,104 +29,104 @@ Pour tester notre application, il nous a été fourni au total 8 jeux de tests, 
 Chaque niveau de sprint comprenait deux fichiers : un fichier in-sp-base.txt qui contient les entrées qui permettront d’afficher les messages de base du programme, et un fichier in-sp-erreur.txt qui contient les entrées qui permettront d’afficher les messages d’erreur du programme. Les fichiers d’entrées s’accompagnent de fichiers de sorties pour chaque niveau, où encore une fois, deux types de fichiers sont présents : un fichier out-sp-base.txt et u fichier out-sp-erreur.txt.
 
 
-Bilan de validations des tests de développement
+# **Bilan de validations des tests de développement**
 
 Après chaque fin de commande, nous testions notre programme avec les sprints ; en faisant cela, il nous a été permis par la suite de corriger nos erreurs.
 
 
-Sprint 1: 
++ Sprint 1: <br>
 Pour le sprint 1, nous devions faire intervenir les commandes “formation”, "épreuve", “coefficient” et “exit”. La commande “formation” permet de déclarer une formation avec un nombre d’UE. Par la suite, en liaison à la formation, la commande “epreuve” permet de créer des matières, des épreuves ainsi que des coefficients. La commande “coefficient“ permet de vérifier si les coefficients rentrés par l’utilisateur respectent les contraintes, et la commande 
 “exit” permet de mettre fin au programme. 
 
-Sprint 2:
++ Sprint 2: <br>
 Pour le sprint 2, il était obligé de valider le sprint 1 afin de poursuivre. Nous devions faire intervenir les commandes “note” et “notes”. La commande “note” permet d’ajouter une note dans une épreuve d’une matière à un étudiant qu’on ajoutera dans la formation. La commande “notes” permet de vérifier si les notes rentrées par l’utilisateur respectent les contraintes.
 
-Sprint 3:
++ Sprint 3: <br>
 Pour le sprint 3, il était obligé de valider le sprint 2 afin de poursuivre. Nous devions faire intervenir la commande “releve”. La commande “releve” permet de calculer les moyennes des matières du semestre indiqué par l’utilisateur et de les afficher.
 
-Sprint 4:
++ Sprint 4:<br>
 Pour le sprint 4, il était obligé de valider le sprint 3 afin de poursuivre. Nous devions faire intervenir la commande “decision”. Cette dernière permet d’afficher la moyenne des semestres et ainsi savoir quelles UEs sont validées. Par la suite, elle affiche le message qui indique le passage ou non.
 Ainsi, les sprints demandés ont été validés avec succès ; nous avons utilisé les fonctionnalités du terminal Windows pour exécuter notre application, notamment avec les commandes ‘’fc /w’’ et ‘’fc'’ qui permet de comparer deux fichiers txt. Nous voulions être sûr que notre application soit fonctionnelle, c’est pourquoi nous avons développé notre propre jeu de test.
 
 
-Notre jeu de test :
-
-fichier in-perso.txt :
-
-epreuve 1 Informatique Interro 1 4 3
-formation 7
-formation 3
-formation 3
-epreuve 3 Informatique Interro 2 2 0
-epreuve 1 Informatique Interro 1 4 0
-epreuve 1 SGBD DST 1 2 0
-epreuve 1 SGBD Ecrit 1 2 3
-epreuve 1 SGBD Oral 1 2 3
-epreuve 1 Systeme DST 1 2 3
-epreuve 1 Systeme Ecrit 1 2 3 
-epreuve 1 Systeme Oral 1 2 3
-epreuve 1 Programmation DST 1 2 0
-epreuve 1 Math DST 0 0 0
-epreuve 1 Math DST 1 2 3
-epreuve 1 Math Ecrit 1 2 3
-epreuve 2 Architecture DST 4 2 1
-epreuve 2 Architecture Ecrit 1 2 3
-epreuve 2 Anglais QCM 1 3 2
-coefficients 5
-coefficients 2
-coefficients 1
-epreuve 1 Programmation Ecrit 1 2 2
-coefficients 1
-note 8 Paul Programmation DST 14
-note 1 Paul Programmation Ecrit 24
-note 1 Paul Dessin Ecrit 12
-note 1 Paul Programmation Oral 14
-note 1 Paul Programmation Ecrit 12
-note 1 Paul Programmation Ecrit 12
-note 1 Paul SGBD DST 13
-note 1 Paul SGBD Ecrit 12
-note 1 Paul SGBD Oral 14
-note 1 Paul Systeme DST 16
-note 1 Paul Systeme Ecrit 12
-note 1 Paul Systeme Oral 12
-note 1 Paul Math Ecrit 13
-note 1 Paul Math DST 14
-note 2 Paul Architecture DST 12
-note 2 Paul Architecture Ecrit 14
-note 2 Paul Anglais QCM 18
-notes 3 Paul
-notes 1 Sylvie 
-notes 1 Paul
-note 1 Paul Informatique Interro 13
-note 1 Paul Programmation DST 19
-notes 1 Paul 
-releve 7 Paul
-releve 1 Sylvie
-epreuve 2 BDD Oral 1 2 0
-epreuve 2 BDD Ecrit 1 2 6
-coefficients 2
-note 2 Paul BDD Oral 13
-note 2 Paul BDD Ecrit 16
-notes 2 Paul
-releve 2 Paul
-decision Sylvie
-decision Paul
-epreuve 2 Gestion Oral 1 4 5
-epreuve 2 Gestion PPP 1 5 1
-note 2 Paul Gestion PPP 2
-notes 2 Paul
-note 2 Paul Gestion Oral 7
-releve 2 Paul
-decision Paul
-exit
+# <b>Notre jeu de test :</b>
 
 
-fichier out-perso.txt:
-
-Le nombre d'UE n'est pas defini
-Le nombre d'UE est incorrect
-Le nombre d'UE est defini
-Le nombre d'UE est deja defini
+fichier in-perso.txt <br>
+```
+epreuve 1 Informatique Interro 1 4 3 <br> 
+formation 7 <br>
+formation 3 <br>
+formation 3 <br>
+epreuve 3 Informatique Interro 2 2 0<br>
+epreuve 1 Informatique Interro 1 4 0<br>
+epreuve 1 SGBD DST 1 2 0<br>
+epreuve 1 SGBD Ecrit 1 2 3<br>
+epreuve 1 SGBD Oral 1 2 3<br>
+epreuve 1 Systeme DST 1 2 3<br>
+epreuve 1 Systeme Ecrit 1 2 3 <br>
+epreuve 1 Systeme Oral 1 2 3<br>
+epreuve 1 Programmation DST 1 2 0<br>
+epreuve 1 Math DST 0 0 0<br>
+epreuve 1 Math DST 1 2 3<br>
+epreuve 1 Math Ecrit 1 2 3<br>
+epreuve 2 Architecture DST 4 2 1<br>
+epreuve 2 Architecture Ecrit 1 2 3<br>
+epreuve 2 Anglais QCM 1 3 2<br>
+coefficients 5<br>
+coefficients 2<br>
+coefficients 1<br>
+epreuve 1 Programmation Ecrit 1 2 2<br>
+coefficients 1<br>
+note 8 Paul Programmation DST 14<br>
+note 1 Paul Programmation Ecrit 24<br>
+note 1 Paul Dessin Ecrit 12<br>
+note 1 Paul Programmation Oral 14<br>
+note 1 Paul Programmation Ecrit 12<br>
+note 1 Paul Programmation Ecrit 12<br>
+note 1 Paul SGBD DST 13<br>
+note 1 Paul SGBD Ecrit 12<br>
+note 1 Paul SGBD Oral 14<br>
+note 1 Paul Systeme DST 16<br>
+note 1 Paul Systeme Ecrit 12<br>
+note 1 Paul Systeme Oral 12<br>
+note 1 Paul Math Ecrit 13<br>
+note 1 Paul Math DST 14<br>
+note 2 Paul Architecture DST 12<br>
+note 2 Paul Architecture Ecrit 14<br>
+note 2 Paul Anglais QCM 18<br>
+notes 3 Paul<br>
+notes 1 Sylvie <br>
+notes 1 Paul<br>
+note 1 Paul Informatique Interro 13<br>
+note 1 Paul Programmation DST 19<br>
+notes 1 Paul <br>
+releve 7 Paul<br>
+releve 1 Sylvie<br>
+epreuve 2 BDD Oral 1 2 0<br>
+epreuve 2 BDD Ecrit 1 2 6<br>
+coefficients 2<br>
+note 2 Paul BDD Oral 13<br>
+note 2 Paul BDD Ecrit 16<br>
+notes 2 Paul<br>
+releve 2 Paul<br>
+decision Sylvie<br>
+decision Paul<br>
+epreuve 2 Gestion Oral 1 4 5<br>
+epreuve 2 Gestion PPP 1 5 1<br>
+note 2 Paul Gestion PPP 2<br>
+notes 2 Paul<br>
+note 2 Paul Gestion Oral 7<br>
+releve 2 Paul<br>
+decision Paul<br>
+exit<br>
+```
+<b>fichier out-perso.txt:</b>
+```
+Le nombre d'UE n'est pas defini<br>
+Le nombre d'UE est incorrect<br>
+Le nombre d'UE est defini<br>
+Le nombre d'UE est deja defini<br>
 Le numero de semestre est incorrect
 Matiere ajoutee a la formation
 Epreuve ajoutee a la formation
@@ -249,10 +238,10 @@ S2 12.0 10.9 12.3
 Moyennes annuelles 12.8 12.3 12.8 
 Acquisition UE1, UE2, UE3
 Devenir Passage
+```
 
 
-
-Bilan du projet :
+# **Bilan du projet**
 
 Pour un premier projet, nous sommes satisfaits car nous avons finalisé et accompli tous les objectifs demandés. Nous avons rencontré des difficultés au niveau de la compréhension du sujet, notamment au début avec les structures et également au niveau de l’affichage des moyennes.
 
